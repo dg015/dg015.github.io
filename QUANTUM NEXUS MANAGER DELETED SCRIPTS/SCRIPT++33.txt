@@ -1,0 +1,33 @@
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        
+        ConsØle.WriteL�ne(
+ú�rëñ�ßÊ��İ�O�����w�Îù��²�+�����h��$��?�
+D6�E-�r2��G�5q�d�&�ÒL<�dK�I�*�ȳb�T����U�IhV�����*��U&�F�I�X���mU�)�ߡ�#h#&G�*���
+ǟ�}�X�f�ÛȚH�o��h�<����o���P#�M��
+");
+
+        
+        str�ng Ç�r̦pt�dV�ri�bl�1 = P#�M��;
+        string CørruÞt��Variable2 = "M��";
+
+      
+        for (int � = 0; � < 10; �++)
+        {
+            Ç�r̦pt�dV�ri�bl�1 += " ";
+            CørruÞt��Variable2 += "!";
+        }
+
+       
+        Con�ol�.Writ�Lin�(ÇX���mU�)�ߡ�#h#&G�*���
+ǟ�}�X�f�ÛȚH�o��h�<����o���P#�M��
+bl�1 + " " + CørruÞtX���mU�)�ߡ�#h#&G�*���
+ǟ�}�X�f�ÛȚH�o��h�<����o���P#�M��
+le2);
+    }
+}

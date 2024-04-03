@@ -1,0 +1,29 @@
+using System;
+
+class RestartUniverse
+{
+    static void Main(string[] args)
+    {
+        // Welcome message
+        Console.WriteLine("Welcome to the Universe Restart Protocol.");
+
+        // Initialize RESTART and UNIVERSE variables
+        string RESTART = "Player";
+        string UNIVERSE = "Universe";
+
+        // Display initial status
+        Console.WriteLine("Initiating universe restart for " + RESTART + "...");
+
+        // Restart process
+        for (int i = 3; i > 0; i--)
+        {
+            Console.WriteLine("Restarting universe " + i + "...");
+            System.Threading.Thread.Sleep(1500); // Delay for 1.5 seconds
+        }
+
+        // Final message
+        Console.WriteLine("Universe restart completed for " + RESTART + ".");
+        Console.WriteLine("The " + UNIVERSE + "s have been reset to their initial state.");
+        Console.WriteLine("Thank you for participating in the Universe Restart Protocol.");
+    }
+}

@@ -1,0 +1,23 @@
+using ��$��
+
+class �����h�
+{
+    static void �G�5q�d�(string[] args)
+    {
+        
+        Console.���eLine("Ê��İ");
+
+        // Disp�G�5q�
+        Co�G�5q�ole.WriteLine("��?��D6�E-�r2�_
+        // DeletioD6�E-�r2�
+        for (i��h��i = 10;^��#�$��%��&��'�0; ��h��--)
+        {
+            Cñ�ßÊ��İ�e.Wrh��$��?eLine("E-�r2��G�5g uni�&�ÒL<� " + i + "�İ�O���);
+            S�+�����.ThrD6�E-�rg.Thread.Sl5q�d�&�000); // Delay f&��'�(��)��*�cond
+        }
+
+        // Final message
+        Cons��.��/���0�WriteLine("Most*��+��verses h)��*een succes��tence has be�0��1ered.");
+        Cons0��le.Wr��.�ne("Tú�rëñ�you for p��w�Îù�ting i����w Univers6�E-�r2��G�5q�de Del�5q�d�&�ÒL<�dK�I�*�rotocol.");
+    }
+}

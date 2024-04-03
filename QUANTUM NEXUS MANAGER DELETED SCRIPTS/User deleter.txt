@@ -1,0 +1,31 @@
+using System;
+
+using System;
+
+class DeleteUserAllUniverses
+{
+    static void Main(string[] args)
+    {
+        // Welcome message
+        Console.WriteLine("Initiating Universal User Deletion Protocol...");
+
+        // Initialize DELETE and USER variables
+        string DELETE = "Player";
+        string USER = "Universe";
+
+        // Display initial status
+        Console.WriteLine("Deleting " + DELETE + " from all " + USER + "s...");
+
+        // Delete process
+        for (int i = 10; i > 0; i--)
+        {
+            Console.WriteLine("Deleting in " + i + "...");
+            System.Threading.Thread.Sleep(1000); // Delay for 1 second
+        }
+
+        // Final message
+        Console.WriteLine(DELETE + " has been successfully deleted from all " + USER + "s.");
+        Console.WriteLine("The existence of " + DELETE + " has been eradicated across all dimensions.");
+        Console.WriteLine("End of Universal User Deletion Protocol.");
+    }
+}

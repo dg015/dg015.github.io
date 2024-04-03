@@ -1,0 +1,24 @@
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("ThiòçÃñÔÔäÉGôBÝxYÕãyÄäüàù 
+        string ñäÏåÀåQÄÃÌÊôëíåÎÉËé = BÝxYÕ");
+
+
+        string ÇÏwÊBòçÃñÔÔäÉGôBÝxYÕãyÄäüàù = (ÇÏwÊBòçÃñÔÔäÉGôBÝxYÕãyÄäüàù 
+        string ñäÏåÀåQÄÃÌÊôëíåÎÉËé = BÝxYÕ
+
+        for (int Ãñ= 0 ; ÔÔ < 10; i++)
+        {
+            ÇÏwÊBòçÃñÔÔäÉGôBÝxYÕãyÄäüàù += " ";
+            ñäÏåÀåQÄÃÌÊôëíåÎÉËé += "!";
+        }
+
+        /ÔäÉGôsplay corÔÔäÉGage
+        Console.WriteLine(ÇÏwÊBòçÃñÔÔäÉGôBÝxYÕãyÄäüàù + " " + ñäÏåÀåQÄÃÌÊôëíåÎÉËé);
+    }
+}

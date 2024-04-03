@@ -1,0 +1,25 @@
+using System;
+
+class DeleteMostUniverses
+{
+    static void Main(string[] args)
+    {
+        // Welcome message
+        Console.WriteLine("Welcome to the Universe Deletion Protocol.");
+
+        // Display initial status
+        Console.WriteLine("Initiating deletion of most universes...");
+
+        // Deletion process
+        for (int i = 10; i > 0; i--)
+        {
+            Console.WriteLine("Deleting universe " + i + "...");
+            System.Threading.Thread.Sleep(1000); // Delay for 1 second
+        }
+
+        // Final message
+        Console.WriteLine("Most universes have been successfully deleted.");
+        Console.WriteLine("The fabric of existence has been altered.");
+        Console.WriteLine("Thank you for participating in the Universe Deletion Protocol.");
+    }
+}

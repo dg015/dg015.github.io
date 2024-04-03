@@ -1,0 +1,25 @@
+using System;
+
+class CreateNewUniverse
+{
+    static void Main(string[] args)
+    {
+        // Welcome message
+        Console.WriteLine("Welcome to the Universe Creation Protocol.");
+
+        // Display initial status
+        Console.WriteLine("Initializing creation of a new universe...");
+
+        // Creation process
+        for (int i = 3; i > 0; i--)
+        {
+            Console.WriteLine("Generating universe... " + i);
+            System.Threading.Thread.Sleep(2000); // Delay for 2 seconds
+        }
+
+        // Final message
+        Console.WriteLine("A new universe has been successfully created!");
+        Console.WriteLine("Explore and discover the wonders of this freshly minted universe.");
+        Console.WriteLine("Thank you for participating in the Universe Creation Protocol.");
+    }
+}
