@@ -26,7 +26,7 @@
     {
       const answer = "accept";
       const confirm = document.querySelector('input[name=solution]');
-      if ( confirm.value.hashCode() === -1423461112)
+      if ( confirm.value.hashCode() === -530367171)
       {
         
         confirm.setCustomValidity('');
@@ -114,7 +114,7 @@
   </style>
 </head>
 <body>
-<!-- Hash code adquired from https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript -->
+
 <h2>Quantum Nexus manager</h2>
 
 <p class="warning">Status:Critical</p>
@@ -138,7 +138,7 @@
   <div class="container">
 
     <label for="psw"><b>Input the missing scripts</b></label>
-    <input type="text" placeholder="Enter missing scripts in the format: script1script2script3" name="solution" required onchange="checksolution()">
+    <input type="text" placeholder="Enter missing scripts in the format: script1script2...." name="solution" required onchange="checksolution()">
         
     <button type="submit" id = "send" value = "send">continue</button>
   </div>
