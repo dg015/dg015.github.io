@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Terminal Webpage</title>
+  <style>
+      .input {
+      font-family: monospace;
+      width: 100%;
+      padding: 5px;
+      background-color: #f3f3f3;
+      border: none;
+      color: #000;
+      outline: none;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: monospace;
+      margin: 0;
+      padding: 0;
+    }
+    .terminal {
+      width: 100%;
+      
+      overflow: hidden;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .output {
+      overflow: auto;
+      height: 70%;
+    }
+
+    .warning {
+      overflow: auto;
+      
+      color: red;
+    }
+      .directions {
+      overflow: auto;
+      color: yellow;
+    }
+
+        /* Style the button that is used to open and close the collapsible content */
+    .collapsible {
+      font-family: monospace;
+      background-color: #000;
+      color: #ffff;
+      cursor: pointer;
+      padding: 18px;
+      border-color: #316704;
+      text-align: left;
+
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .collapsible:hover {
+        background-color: #316704;
+        color: white;
+    }
+
+    /* Style the collapsible content. Note: hidden by default */
+    .content {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+
+       #scriptOutput {
+      display: none;
+      color: green;
+      white-space: pre-wrap; /* Preserves line breaks */
+    }
+    .link
+    {
+      display: none;
+      color: blue;
+      white-space: pre-wrap; /* Preserves line breaks */
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- solution is universe_reseter,user_deleter || user_deleter,universe_reseter -->
+  <div class="terminal">
+    <div class="output" id="output">
+      <p>Welcome to Quantum nexus terminal</p>
+      <p> Attempting to stop Quantum Nexus overcharge</p>
+      <p>...</p>
+      <p>....</p>
+      <p>.....</p>
+      <p>Searching for soltuions..</p>
+      <p>...</p>
+      <p>....</p>
+      <p>.....</p>
+      <p>Solution found</p>
+      <div class = "directions">
+        <p>To stop the overcharging memory release is needed</p>
+        <p>To release memory to stop Quantum Nexus overcharging the following solutions are available</p>
+      </div>
+        <p>Delete all copies of current user and from the corporation from other universes except from this</p>
+        <p>OR</p>
+        <p>Reset all Universes except this one, the user universe will continue to function as normal, the corporation won't be stoped</p>
+        <p>To use any of the functions the user must type in the input box:</p>
+        <p>
+          <div class = "warning">
+              DELETE
+          </div>
+          To delete all copies of current user and from the corporation from other universes except from this
+        </p>
+         <p>OR</p>
+        <p>
+            <div class = "warning">
+              RESET
+            </div>
+           To reset all Universes except this one, the user universe will continue to function as normal.
+        </p>
+        <br>
+        <br>
+        <p>Awaiting results</p>
+        <input type="text" name = "confirm" class="input" id="textInput" autofocus>
+    </div>
+  </div>
+
+ <script type="text/javascript">
+
+        document.getElementById("textInput").addEventListener("keypress", function(event) 
+        {
+          if (event.key === "Enter") 
+          {
+            var inputText = event.target.value.trim();
+            if (inputText.toLowerCase() === "delete") 
+            {
+             alert("Deleting copies of user and corporation from other universes");
+            }
+            if (inputText.toLowerCase() === "reset") 
+            {
+              alert("Reseting other universes");
+            }
+           else 
+           {
+             alert("Option not available");
+           }
+           event.target.value = ""; // Clear the input box after processing
+          }
+        });
+      
+ </script>
+</body>
+</html>
