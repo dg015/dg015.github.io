@@ -90,7 +90,7 @@
   </style>
 </head>
 <body>
-  <!-- solution is universe_reseter-user_deleter -->
+  <!-- solution is universe_reseter,user_deleter || user_deleter,universe_reseter -->
   <div class="terminal">
     <div class="output" id="output">
       <p>Welcome to Quantum nexus terminal</p>
@@ -111,11 +111,10 @@
         </div>
         
         <p>Availabe commands:
-        <p>"script" will load the script for the machine
+        <p>"show_script" will load the script for the machine
         <p>how to load scripts:
-        <p>find the scripts you want to load and input them following the syntax: script1name-scriptname2
-        <p>No uppercase or spaces pertmited
-        <p>Example: object_deleter-object_creator
+        <p>find the scripts you want to load and input them following the syntax: script1name,scriptname2
+        <p>Example: object_deleter,object_creator
         <p>Input commands bellow
 
         <input type="text" name = "confirm" class="input" id="textInput" autofocus>
@@ -195,25 +194,24 @@
         return hash;
       }
 
-   
         document.getElementById("textInput").addEventListener("keypress", function(event) 
         {
           if (event.key === "Enter") 
           {
             var inputText = event.target.value.trim();
-            if (inputText === "script") 
+            if (inputText.toLowerCase() === "show_script") 
             {
              document.getElementById("scriptOutput").style.display = "block";
             }
 
-            else if(inputText.hashCode() == 2029304158)
+            else if(inputText.toLowerCase().hashCode() == -1972260131 || inputText.toLowerCase().hashCode() == 619596571)
             {
               alert("solution accepted");
             }
            else 
            {
              document.getElementById("scriptOutput").style.display = "none";
-             alert("Command not found, list of available commands:script to show the machine code, to load script write in the following syntax script1name-script2name");
+             alert("Command or script not found");
 
            }
            event.target.value = ""; // Clear the input box after processing
